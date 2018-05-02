@@ -8,7 +8,12 @@ class Student
   end
 
   def create_table
-
+    sql = <<- SQL
+      CREATE TABLE IF N OT EXISTS students (
+      id INTEGER PRIMARY KEY,
+      name TEXT,
+      grade INTEGER
+      )
   end
 
 end
